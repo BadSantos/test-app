@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+include __DIR__ . '/bootstrap/autoload.php';
+
+$app = new Symfony\Component\Console\Application('My Console apps');
+$app->add(new App\Commands\ChessColorChecker(new App\Components\Chess()));
+
+$status = $app->run();
+
+exit($status);

@@ -1,0 +1,33 @@
+{
+  "name": "badsantos/chess-test",
+  "description": "Just simple test application",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "BadSantos(Romario)",
+      "email": "peregud_roma@mail.ru"
+    }
+  ],
+  "autoload": {
+    "files": [
+    ],
+    "psr-4": {
+      "App\\": "app",
+      "Tests\\": "tests"
+    }
+  },
+  "require": {
+    "symfony/console": "^5.1"
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "sort-packages": true
+  },
+  "prefer-stable": true,
+  "require-dev": {
+    "codedungeon/phpunit-result-printer": "^0.29.3",
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "phpunit/phpunit": "^9.4"
+  }
+}
